@@ -18,4 +18,10 @@ print(' /___  |')
 
 # recreate the 4 level triangle with a single line using \n
 print('      /| \n     / | \n    /  |  \n   /___|  ')
+
 # recreate the 4 level triangle using a multi-line string
+
+print("""      /|
+     / |   
+    /  |       
+   /___|        """)
