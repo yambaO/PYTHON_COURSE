@@ -12,6 +12,15 @@ print("This is example using \nnewline, which backspace")
 # start with a letter or the underscore character
 # cannot start with a number
 # can only contain alpha-numeric characters and underscores
-
-my_variable = "a string"
+# MultiWord Variable Names
+my_variable = "a "
 print(my_variable)
+
+# Concatenation 
+name = "Danny"
+print("Hello my name is " + name)
+
+# INPUT
+
+userAge = input("What is your age?")
+print("Wow, you look good for " + userAge)
