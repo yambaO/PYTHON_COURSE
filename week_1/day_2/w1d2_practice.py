@@ -12,4 +12,38 @@ tax_amount = subtotal * tax_percentage
 # d. assign a variable 'total' to the sum of subtotal and tax_amount
 total = subtotal + tax_amount
 
-print(total)
+print("Total: " , total)
+
+# Round numbers with function 
+
+number = 1.52773
+# print(round(number))
+# print(round(number, 0))
+# print(round(number, 1))
+
+# IMPORT KEYWORD
+
+import math
+
+# print(math.ceil(number))
+# print(math.floor(number))
+
+# ASSIGMENT OPERATORS
+
+# x = 5 
+# x += 3
+# x -= 3 
+# x *= 3
+# x /= 3 
+# x %= 3
+# x **= 3
+# x //= 3
+
+# print(" final result of x is equal to: ",   x)
+
+# CASTING
+
+string = "12"
+print(type(string))
+string = int(string)
+print(type(string))

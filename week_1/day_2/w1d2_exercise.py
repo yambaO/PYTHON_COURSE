@@ -10,31 +10,42 @@
 # Final Number: 5
 
 # assign a variable "step_1" to a number of your choice between 1 - 9
+step_1 = int(input("Please enter a number of your choice: "))
 
 
+# assign a variable "step_2" to the product of step_1 and the number 28
 
-# assign a variable "step_2" to the product of step_1 and the number 2
 
-
+step_2 = step_1 * 2
 
 # assign a variable "step_3" to the sum of step_2 and the number 10
 
-
+step_3 = step_2 + 10
 
 # assign a variable "step_4" to the quotient of step_3 and the number 2
 
+step_4 = step_3 / 2
 
 
 # assign a variable "step_5" to the difference between step_4 and step_1
 
-
+step_5 = step_4 - step_1
 
 # print step_5 and you should see 5!
 
+print("the number at step 5 is: ",  step_5)
 
 
 # BONUS 1: can you convert step_1 to prompt a user's input?
     # HINT: you need to cast step_1 to a int because user input is a type string.
 
+
 # BONUS 2: can you REFACTOR using less variables?
 
+step_1 = int(input("Please enter a number of your choice: "))
+step_1 *= 2
+step_1 += 10
+step_1 /= 2
+step_1 -= step_1
+
+print("the number at step 5 is fact: ",  step_5)
