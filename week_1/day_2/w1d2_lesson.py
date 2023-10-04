@@ -23,6 +23,13 @@ print("4" + "4")
 print(4 + 4)
 print( 4 - 4)
 print(4 * 4)
+# Division result will always be a float number
 print(4 / 1)
+# to obtain a integer when dividing we use floor //
+print( 15 // 3)
 print(4 % 4)
 print( 4 % 1)
+print( 11 % 3)
+
+# for exponent we use **
+print( 4 ** 4)
