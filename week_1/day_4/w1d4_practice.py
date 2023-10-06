@@ -82,3 +82,19 @@ us_state.insert(4, "Blue")
 # 7. Does anyone live in Iowa? Do you know anyone that lives there? Is it even real?! Remove it.. Do it president.
 us_state.remove("Iowa")
 print(us_state)
+
+#WHILE LOOP
+
+my_age = 16
+
+while my_age < 21:
+    print("waiting one more year")
+    my_age +=1
+
+    new_list = ['a','b','c']
+iterator = 0
+
+while iterator < len(new_list):
+  print(new_list[iterator]) # or any other operator
+  iterator += 1
+    
