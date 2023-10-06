@@ -43,7 +43,9 @@ import math
 
 # CASTING
 
+# casting string to interger
 string = "12"
 print(type(string))
 string = int(string)
 print(type(string))
+

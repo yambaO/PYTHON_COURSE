@@ -8,7 +8,7 @@ b = 2
 a == b
 ```
 
-Answer: 
+Answer: true
 
 ```python
  c = 5
@@ -16,7 +16,7 @@ Answer:
  c != d
 ```
 
-Answer: 
+Answer: false
 
 ```python
 e = 1
@@ -24,7 +24,7 @@ f = 10/10
 e > f
 ```
 
-Answer: 
+Answer: false
 
 ```python
 g = .5
@@ -32,38 +32,38 @@ h = 2/4
 g <= h
 ```
 
-Answer: 
+Answer: true
 
 ```python
 i = 5
 i == 5.0
 ```
 
-Answer: 
+Answer: true
 
 ```python
 c >= i and e >= g
 ```
 
-Answer: 
+Answer: true
 
 ```python
 c >= i or e >= g
 ```
 
-Answer: 
+Answer: true
 
 ```python
 i*e == c and False
 ```
 
-Answer: 
+Answer: false
 
 ```python
 i*e > c or False
 ```
 
-Answer: 
+Answer: false
 
 ## Extra Time?
 

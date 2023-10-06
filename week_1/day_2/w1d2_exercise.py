@@ -33,7 +33,7 @@ step_5 = step_4 - step_1
 
 # print step_5 and you should see 5!
 
-print("the number at step 5 is: ",  step_5)
+print("The number at step 5 is: ",  step_5)
 
 
 # BONUS 1: can you convert step_1 to prompt a user's input?
@@ -48,4 +48,4 @@ step_1 += 10
 step_1 /= 2
 step_1 -= step_1
 
-print("the number at step 5 is fact: ",  step_5)
+print("The number is : ",  step_5)

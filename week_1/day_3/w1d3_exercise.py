@@ -56,13 +56,13 @@ us_states = ["Alabama",
 print(len(us_states))
 
 # print the comparison boolean of the LENgth of us_states to 50
-print(len(us_states) < 50)
-print(len(us_states) > 50)
-print(len(us_states) == 50)
+print(len(us_states) < 50) # False
+print(len(us_states) > 50) # false
+print(len(us_states) == 50) # True
 
 # create a variable my_state_index and assign the index value of the state you currently reside in
 my_state_index = us_states[42]
-# print(us_states[42])
+
 # print us_state with my_state_index to ACCESS your state!
 
 print(my_state_index)
