@@ -5,12 +5,12 @@
 lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # 1. loop through the lowercase and print each element
-# for single_lowercase in lowercase:
-#     print(single_lowercase)
+for single_lowercase in lowercase:
+    print(single_lowercase)
 
 # 2. loop through the lowercase and print the capitalization of each element
-# for single_lowercase in lowercase:
-#     print(single_lowercase.upper())
+for single_lowercase in lowercase:
+    print(single_lowercase.upper())
 
 # MEDIUM
 
