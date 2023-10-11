@@ -26,4 +26,4 @@ last_names = ['Rolley', 'Smith', 'Balenga', 'Issac', 'Cruise', 'Depp', 'Heard', 
 # NOTE: PAY ATTENTION to the starting number of the range and how it differs from the starting index of the list
 
 # B3. Save the file
-wb.save("spreadsheets/day_1_lecture.xlsx")
+wb.save("spreadsheet/demo.xlsx")
