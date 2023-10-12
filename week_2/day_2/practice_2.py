@@ -13,22 +13,22 @@ def greetings():
 
 # Create a function called add_num: 
 def add_num():
-
+  x = 5
+  y = 7
 # Inside your function define two variables: x and y, assign 5 to x and 7 to y
 # print the sum of x and y
- x = 5
- y = 7
- sum = x + y
- print(sum)
+ 
+  sum = x + y
+  print(sum)
 
  
 # Call your function
- add_num()
+  add_num()
 # Create a function called subtract_num:
- def subtract_num():
+def subtract_num():
    x = 10
    y = 3
- print(x - y) 
+#   print(x - y) 
 #  subtract_num()
     
 # Inside your function define two variables: x and y, assign 10 to x and 3 to y
