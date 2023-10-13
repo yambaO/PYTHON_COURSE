@@ -13,7 +13,9 @@ inventory = {
 
 # for item in inventory:
     # decrement item by using an assignment operator
-
+for value in inventory.values():
+    value -= 1
+print(inventory)    
     # NOTE: recall that item represents the key of the key:value pair
 
 
@@ -23,26 +25,26 @@ inventory = {
 
     # a. Dictionaries - create a function that takes in a dictionary which updates the "role" key value pair and makes it uppercase
 
-user_1 = {
-    "firstName": "Stephanie",
-    "lastName": "Lentell",
-    "role": "Instructor",
-    "id": "95485"
-}
+# user_1 = {
+#     "firstName": "Stephanie",
+#     "lastName": "Lentell",
+#     "role": "Instructor",
+#     "id": "95485"
+# }
 
-user_2 = {
-    "firstName": "Brion",
-    "lastName": "Lentell",
-    "role": "Instructor",
-    "id": "67344"
-}
+# user_2 = {
+#     "firstName": "Brion",
+#     "lastName": "Lentell",
+#     "role": "Instructor",
+#     "id": "67344"
+# }
 
-user_3 = {
-    "firstName": "Daniel",
-    "lastName": "Kim",
-    "role": "Instructor",
-    "id": "74324"
-}
+# user_3 = {
+#     "firstName": "Daniel",
+#     "lastName": "Kim",
+#     "role": "Instructor",
+#     "id": "74324"
+# }
 
     # b. Dictionaries - Run the functions (3 times for each user!)
 
@@ -60,7 +62,7 @@ instructor_list = [user_1, user_2, user_3]
     # e. don't forget to run it!
     
 # 3. Explicit Functions
-user_info = [46453, "Devin", "Smith"]
+# user_info = [46453, "Devin", "Smith"]
     # Each element by index of user_info follows the format of: id, first_name, last_name
 
     # Create a function with a parameter user_list
