@@ -28,8 +28,8 @@ def add_num():
 def subtract_num():
    x = 10
    y = 3
-#   print(x - y) 
-#  subtract_num()
+   print(x - y) 
+   subtract_num()
     
 # Inside your function define two variables: x and y, assign 10 to x and 3 to y
 # print the difference of x and y
