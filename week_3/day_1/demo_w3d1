@@ -2,7 +2,44 @@ from openpyxl import Workbook
 wb = Workbook()
 ws = wb.active
 
-# DICTIONARY TO OPENPYXL
+# # DICTIONARY TO OPENPYXL
+# item_oreo = {
+#     "product_id": 2323,
+#     "name": "oreo",
+#     "reorder_threshold": 300,
+#     "inventory": 743,
+#     "max_amount": 1000,
+#     "description": "yummy yummy"
+# }
+# # count = 0
+# # for key in item_oreo.keys():
+# #     ws.cell(row=1,column=count + 1,value=key)
+# #     count+=1
+
+# # ws.cell(row=1, column=1, value=item_oreo['product_id'])
+# # ws.cell(row=1, column=2, value=item_oreo['name'])
+# # ws.cell(row=1, column=3, value=item_oreo['reorder_threshold'])
+# # ws.cell(row=1, column=4, value=item_oreo['inventory'])
+# # ws.cell(row=1, column=5, value=item_oreo['max_amount'])
+
+# def dict_to_row(item):
+#     ws.cell(row=1, column=1, value=dict['product_id'])
+#     ws.cell(row=1, column=2, value=dict['name'])
+#     ws.cell(row=1, column=3, value=dict['reorder_threshold'])
+#     ws.cell(row=1, column=4, value=dict['inventory'])
+#     ws.cell(row=1, column=5, value=dict['max_amount'])
+#     ws.cell(row=1, column=6, value=dict['description'])
+
+# print(len(item_oreo.keys()))
+# len(item_oreo.values())
+# # or
+# len(item_oreo.items()) # still works because it will return 5 tuples
+
+# for number in range(1, len(item_oreo.keys()) + 1):
+#     ws.cell(row=1, column=number, value=list(item_oreo.values())[number - 1])
+
+# numerate is used for loops
+
 item_oreo = {
     "product_id": 2323,
     "name": "oreo",
@@ -11,10 +48,25 @@ item_oreo = {
     "max_amount": 1000,
     "description": "yummy yummy"
 }
-ws.cell(row=1, column=1, value=item_oreo['product_id'])
-ws.cell(row=1, column=2, value=item_oreo['name'])
-ws.cell(row=1, column=3, value=item_oreo['reorder_threshold'])
-ws.cell(row=1, column=4, value=item_oreo['inventory'])
-ws.cell(row=1, column=5, value=item_oreo['max_amount'])
+item_coke = {
+    "product_id": 6545,
+    "name": "coke",
+    "reorder_threshold": 100,
+    "inventory": 101,
+    "max_amount": 500
+}
+
+item_pepsi = {
+    "product_id": 3456,
+    "name": "pepsi",
+    "reorder_threshold": 50,
+    "inventory": 137,
+    "max_amount": 200
+}
+inventory_list = [item_oreo, item_coke, item_pepsi]
+
+for row.each_dict in enumerate(inventory_list, start=1):
+    for column, each_dict_item in enumerate(each_dict_item.values(), start=1):
+        ws.cell(row=row, column=column. value=each_dict_item)
 
 wb.save("/Users/yamba/Python_course/week_3/spreadsheets/demo.xlsx")

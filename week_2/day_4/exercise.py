@@ -31,27 +31,28 @@ print(inventory)
     # a. Dictionaries - create a function that takes in a dictionary which updates the "role" key value pair and makes it uppercase
 
 def uppercase_dict_role(dict):
-    dict['role'] = dict
-# user_1 = {
-#     "firstName": "Stephanie",
-#     "lastName": "Lentell",
-#     "role": "Instructor",
-#     "id": "95485"
-# }
+    dict['role'] = dict["role"].upper()
 
-# user_2 = {
-#     "firstName": "Brion",
-#     "lastName": "Lentell",
-#     "role": "Instructor",
-#     "id": "67344"
-# }
+user_1 = {
+    "firstName": "Stephanie",
+    "lastName": "Lentell",
+    "role": "Instructor",
+    "id": "95485"
+}
 
-# user_3 = {
-#     "firstName": "Daniel",
-#     "lastName": "Kim",
-#     "role": "Instructor",
-#     "id": "74324"
-# }
+user_2 = {
+    "firstName": "Brion",
+    "lastName": "Lentell",
+    "role": "Instructor",
+    "id": "67344"
+}
+
+user_3 = {
+    "firstName": "Daniel",
+    "lastName": "Kim",
+    "role": "Instructor",
+    "id": "74324"
+}
 
     # b. Dictionaries - Run the functions (3 times for each user!)
 uppercase_dict_role(user_1)
@@ -64,16 +65,23 @@ instructor_list = [user_1, user_2, user_3]
     # c. List - create a function that takes in the list and 
     # checks if the each user's role is equal to "INSTRUCTOR". 
     # if it is the same, print VALID else print INVALID (try to use a loop here!)
+import random
+def role_check(list):
+    result = "VALID"
+    for user in list:
+        user["id"] = str(random.randint(1000, 9999))
+        if user["role"]!= "INSTRUCTOR":
+           result = "INVALID"
+    return result       
 
-
-# role_check(instructor_list)
+role_check(instructor_list)
 
     # d. import the random module and update the function to re-assign the id of each user
 
     # e. don't forget to run it!
     
 # 3. Explicit Functions
-# user_info = [46453, "Devin", "Smith"]
+user_info = [46453, "Devin", "Smith"]
     # Each element by index of user_info follows the format of: id, first_name, last_name
 
     # Create a function with a parameter user_list
@@ -81,3 +89,13 @@ instructor_list = [user_1, user_2, user_3]
     #   - id: user_list[0]
     #   - first_name: user_list[1]
     #   - last_name: user_list[2]
+
+def list_into_dict(user_list):
+    return {
+        "id" : str(user_list[0]),
+        "first_name" : user_list[1],
+        "last_name" : user_list[2]
+    }
+
+user_dict = list_into_dict(user_info),
+print(user_dict)
