@@ -1,0 +1,20 @@
+from openpyxl import Workbook
+wb = Workbook()
+ws = wb.active
+
+# DICTIONARY TO OPENPYXL
+item_oreo = {
+    "product_id": 2323,
+    "name": "oreo",
+    "reorder_threshold": 300,
+    "inventory": 743,
+    "max_amount": 1000,
+    "description": "yummy yummy"
+}
+ws.cell(row=1, column=1, value=item_oreo['product_id'])
+ws.cell(row=1, column=2, value=item_oreo['name'])
+ws.cell(row=1, column=3, value=item_oreo['reorder_threshold'])
+ws.cell(row=1, column=4, value=item_oreo['inventory'])
+ws.cell(row=1, column=5, value=item_oreo['max_amount'])
+
+wb.save("/Users/yamba/Python_course/week_3/spreadsheets/demo.xlsx")

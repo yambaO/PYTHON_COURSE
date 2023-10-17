@@ -13,8 +13,13 @@ inventory = {
 
 # for item in inventory:
     # decrement item by using an assignment operator
-for value in inventory.values():
-    value -= 1
+for item in inventory.keys():
+    if inventory[item] == 0:
+        pass
+    else:
+        inventory[item] -= 1
+print(inventory)        
+
   
     # NOTE: recall that item represents the key of the key:value pair
 
@@ -25,6 +30,8 @@ for value in inventory.values():
 
     # a. Dictionaries - create a function that takes in a dictionary which updates the "role" key value pair and makes it uppercase
 
+def uppercase_dict_role(dict):
+    dict['role'] = dict
 # user_1 = {
 #     "firstName": "Stephanie",
 #     "lastName": "Lentell",
@@ -47,6 +54,9 @@ for value in inventory.values():
 # }
 
     # b. Dictionaries - Run the functions (3 times for each user!)
+uppercase_dict_role(user_1)
+uppercase_dict_role(user_2)
+uppercase_dict_role(user_3)
 
 instructor_list = [user_1, user_2, user_3]
 # print(instructor_list)
@@ -54,6 +64,7 @@ instructor_list = [user_1, user_2, user_3]
     # c. List - create a function that takes in the list and 
     # checks if the each user's role is equal to "INSTRUCTOR". 
     # if it is the same, print VALID else print INVALID (try to use a loop here!)
+
 
 # role_check(instructor_list)
 
