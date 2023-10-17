@@ -15,7 +15,7 @@ inventory = {
     # decrement item by using an assignment operator
 for value in inventory.values():
     value -= 1
-print(inventory)    
+  
     # NOTE: recall that item represents the key of the key:value pair
 
 
