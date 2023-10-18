@@ -22,6 +22,21 @@ for key, value in clefairy.items():
     count+= 1
 
 # create a function that takes in a pokemon
+# weedle = {
+#     "id": 13,
+#     "name": "weedle",
+#     "base_experience": 39,
+#     "height": 3,
+#     "order": 17,
+#     "weight": 32
+# }
+def pokeball(pokemon):
+    c_count = 1
+    for key in pokemon:
+         ws.cell(row=3, column=c_count, value=pokemon[key])
+    c_count+=1
+# call the function with weedle!
+
 weedle = {
     "id": 13,
     "name": "weedle",
@@ -30,12 +45,5 @@ weedle = {
     "order": 17,
     "weight": 32
 }
-def pokeball(pokemon):
-    c_count = 1
-    for key in pokemon:
-         ws.cell(row=3, column=c_count, value=pokemon[key])
-    c_count+=1
-# call the function with weedle!
-pokeball(weedle)
 
 wb.save('/Users/yamba/Python_course/week_3/spreadsheets/practice.xlsx')

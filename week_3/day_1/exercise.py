@@ -10,8 +10,13 @@ users_list = ["Alex", "Bob", "Charlie", "Dexter", "Edgar", "Frank", "Gary"]
 
 # example output    
 # [{"user_id": 0, "name": "Alex"}, etc, etc]
+user_dictionararies = [{'user_id': 0, 'name': 'Alex'}, {'user_id': 1, 'name': 'Bob'}, {'user_id': 2, 'name': 'Charlie'}, {'user_id': 3, 'name': 'Dexter'}, {'user_id': 4, 'name': 'Edgar'}, {'user_id': 5, 'name': 'Frank'}, {'user_id': 6, 'name': 'Gary'}]
+
 
 # 1a. Create a function that takes a single string value and returns the desired dictionary
+def desired_dictionary():
+    
+
 
 # 1b. Create a new empty list called users_dict_list
 

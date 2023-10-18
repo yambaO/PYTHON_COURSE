@@ -1,0 +1,13 @@
+import json as js
+import requests as rq
+# import dummy_json as dj
+
+# data = json.loads(dj.dummy_json)
+# print(data)
+
+url = "https://jsonplaceholder.typicode.com/posts"
+response = rq.get(url)
+print(response.status_code) # return a Response 200 
+data = response.json()
+posts = js.dumps(data, indent=2)
+print(posts)
