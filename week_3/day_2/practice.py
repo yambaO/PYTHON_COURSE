@@ -44,7 +44,7 @@ json_2="""
 js.loads(json_2)
 
 url_2 = js.loads(json_2)[0]["url"]
-url_3 = js.loads(json_3)[2]["url"]
+url_3 = js.loads(json_2)[2]["url"]
 
 # 4. deserialize and assign a variable url_2 with the second item's url
 
