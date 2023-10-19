@@ -14,18 +14,23 @@ user_dictionararies = [{'user_id': 0, 'name': 'Alex'}, {'user_id': 1, 'name': 'B
 
 
 # 1a. Create a function that takes a single string value and returns the desired dictionary
-def desired_dictionary():
-    
+def desired_dictionary(name):
+    return {"name":name}
 
 
 # 1b. Create a new empty list called users_dict_list
+users_dict_list = []
 
 # 1c. Loop through users_list that calls the function for each item and appends the return value to users_dict_list
-
+for name in users_list:
+    users_list = desired_dictionary(name)
+    users_dict_list.append(users_list)
+    # print(users_dict_list)
 # 2. Prompt: Given a series of dictionaries and desired output (mock_data.py), can you provide the correct commands?
 from mock_data import mock_data
 # 2a. retrieve the gender of Morty Smith
-
+print(mock_data["results"][1]["gender"])
 # 2b. retrieve the length of the Rick Sanchez episodes
-
+print(len(mock_data["results"][0]["episode"]))
 # 2c. retrieve the url of Summer Smith location
+print(mock_data["results"][2]["location"]["url"])

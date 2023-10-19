@@ -43,7 +43,7 @@ serialized_json= json.dumps(json_data, indent=4, separators=(", : ",  ": => "))
 # it can just give us a better looking separation of values.
 
 # Finally, sort the data alphabetically reassigning serialized_json:
-serialized_json= json.dumps(json_data, indent=4, separators=(", : ",  ": => "), sort_keys=True)
+serialized_json= json.dumps(json_data, indent=4, sort_keys=True)
 # uncomment below to see the changes!
 print(serialized_json)
 

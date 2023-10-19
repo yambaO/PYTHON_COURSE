@@ -6,15 +6,28 @@
 
 
 # EASY MODE
-
 # import the appropriate modules (you have 3)
+import requests
+import json
+from openpyxl import Workbook
 
 # character_url = "https://rickandmortyapi.com/api/character"
 # set up a workbook and worksheet titled "Rick and Morty Characters"
 
+wb = Workbook()
+ws = wb.active
+ws.title = "Rick and Morty Characters"
 
 # # assign a variable 'data' with the returned GET request
+character_url = "https://rickandmortyapi.com/api/character"
+response = requests.get(character_url)
+data = response.text
+# print(json.loads(data))
 
+indented_json = json.dumps(data, indent=4, separators=(". ", "= "))
+ 
+
+print(indented_json)
 # create the appropriate headers in openpyxl for all of the keys for a single character
 
 # loop through all of the 'results' of the data to populate the rows and columns for each character
