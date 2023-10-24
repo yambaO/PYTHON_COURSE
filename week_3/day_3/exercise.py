@@ -21,14 +21,24 @@ ws.title = "Rick and Morty Characters"
 # # assign a variable 'data' with the returned GET request
 character_url = "https://rickandmortyapi.com/api/character"
 response = requests.get(character_url)
-data = response.text
-# print(json.loads(data))
+data = response.json()
+print(data)
 
-indented_json = json.dumps(data, indent=4, separators=(". ", "= "))
- 
-
-print(indented_json)
 # create the appropriate headers in openpyxl for all of the keys for a single character
+ws.append(["Name", "Status", "Species", "location", "Episode Numbers"])
+
+# for row, character in enumerate(data, 2):
+#   for column in enumerate(data, 1):
+#     ws.cell(row=row, column=column, value=character.value())
+
+for row, character in enumerate(data['results'], 2):
+    ws.cell(row=row, column=1, value=character['name'])
+    ws.cell(row=row, column=2, value=character['status'])
+    ws.cell(row=row, column=3, value=character['species'])
+    ws.cell(row=row, column=4, value=character['location']['name'])
+    ws.cell(row=row, column=5, value=len(character['episode']))
+
+wb.save("/Users/yamba/Python_course/week_3/spreadsheets/exercise3.xlsx")
 
 # loop through all of the 'results' of the data to populate the rows and columns for each character
 
