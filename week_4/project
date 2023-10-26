@@ -1,17 +1,34 @@
+#refactored version
+
 import requests
 import json
 from openpyxl import Workbook
 
+
 wb = Workbook()
 ws = wb.active
+ws.title = "brewery"
+ws_uni = wb.create_sheet("university")
 
 
-url_breweries = 'https://api.openbrewerydb.org/v1/breweries?by_state=alaska'
-url_universities = 'http://universities.hipolabs.com/search?name=alaska'
-response1 = requests.get(url_breweries)
-response2 = requests.get(url_universities)
-data1 = response1.json()
-data2 = response2.json()
-# print(data1)
-print(data2)
+def fetch_create_ws(url, ws):
+    response = requests.get(url)
+    json_data = response.json()
 
+
+    headers = list(json_data[0].keys())
+    ws.append(headers)
+
+    #write data into columns
+    for row, dict in enumerate(json_data, 2):
+        for column, key in enumerate(dict.keys(), 1):
+            ws.cell(row=row, column=column, value=str(dict[key]))
+    
+    wb.save("/Users/yamba/Python_course/week_3/spreadsheets/refactored_ver.xlsx")
+
+brew_url = 'https://api.openbrewerydb.org/v1/breweries?by_state=alaska&per_page=200'
+uni_url = 'http://universities.hipolabs.com/search?name=alaska'
+
+
+fetch_create_ws(brew_url, ws)
+fetch_create_ws(uni_url, ws_uni)
