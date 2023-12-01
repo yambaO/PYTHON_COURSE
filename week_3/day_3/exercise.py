@@ -38,10 +38,10 @@ for row, character in enumerate(data['results'], 2):
     ws.cell(row=row, column=4, value=character['location']['name'])
     ws.cell(row=row, column=5, value=len(character['episode']))
 
-wb.save("/Users/yamba/Python_course/week_3/spreadsheets/exercise3.xlsx")
+
 
 # loop through all of the 'results' of the data to populate the rows and columns for each character
-
+wb.save("/Users/yamba/Python_course/week_3/spreadsheets/exercise3.xlsx")
 # NOTE: due to the headers, the rows need to be offset by one!
 
 # MEDIUM MODE
